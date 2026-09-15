@@ -11,7 +11,7 @@ import { createBill } from "../api/bills";
 export default function CreateBill() {
   const navigate = useNavigate();
 
-  const [products, setProducts] = useState([]);
+  const [products, setProducts = useState([]);
   const [customers, setCustomers] = useState([]);
   const [loading, setLoading] = useState(true);
 
